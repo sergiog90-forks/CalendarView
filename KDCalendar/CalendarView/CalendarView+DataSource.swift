@@ -188,7 +188,7 @@ extension CalendarView: UICollectionViewDataSource {
             if isAdjacent {
                 if indexPath.item < firstDayIndex {
                     if let prevInfo = self.getCachedSectionInfo(indexPath.section - 1) {
-                        dayCell.day = prevInfo.daysTotal - firstDayIndex + indexPath.item
+                        dayCell.day = prevInfo.daysTotal - firstDayIndex + indexPath.item + 1
                     }
                     else {
                         dayCell.isHidden = true
